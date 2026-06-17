@@ -1,6 +1,18 @@
 # Claude Data Analyst Agent
 
-A demo project showing how to build a Claude-powered data analyst agent using the [Managed Agents (beta) API](https://docs.anthropic.com/en/docs/managed-agents). The agent runs in a cloud environment, analyzes CSV data, and produces interactive HTML reports with Plotly charts. An optional Slack integration lets you query the agent directly from a Slack channel.
+Drop a CSV in Slack, @mention the bot, ask a question — get back a full report with charts in the thread.
+
+## Why this exists
+
+You could do this manually in Claude.ai: upload the file, prompt it, copy out the output. But then *you* have to do it every time, and so does everyone else on the team.
+
+The bigger idea: **the knowledge lives in the system, not in individuals.** If five people need to analyze a file this week, all five just @mention the bot and get the same quality output. No one needs to know how to prompt Claude. No one needs to figure out the right format. No one needs to touch a tool they don't use.
+
+You build the expertise once into the backend. Everyone benefits every time after.
+
+---
+
+This is built on Claude's [Managed Agents (beta) API](https://docs.anthropic.com/en/docs/managed-agents). The agent runs in a cloud environment, analyzes CSV data, and produces interactive HTML reports with Plotly charts. An optional Slack integration wires it into your team's workflow.
 
 ## Features
 
