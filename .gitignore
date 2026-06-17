@@ -1,0 +1,6 @@
+.env
+.DS_Store
+.ipynb_checkpoints/
+generated_scripts/
+__pycache__/
+*.pyc
